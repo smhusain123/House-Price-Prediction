@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>House Price Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      padding: 40px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+    a {
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+      text-align: center;
+      color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>House Price Predictor</h2>
+
+    <form action="/predict_price" method="post">
+
+      <label>Location:</label>
+      <select name="location" required>
+        <option value="" disabled selected>Select location</option>
+
+        <option>other</option>
+        <option>Whitefield</option>
+        <option>Sarjapur  Road</option>
+        <option>Electronic City</option>
+        <option>Kanakpura Road</option>
+        <option>Thanisandra</option>
+        <option>Yelahanka</option>
+        <option>Uttarahalli</option>
+        <option>Hebbal</option>
+        <option>Marathahalli</option>
+        <option>Raja Rajeshwari Nagar</option>
+        <option>Bannerghatta Road</option>
+        <option>Hennur Road</option>
+        <option>7th Phase JP Nagar</option>
+        <option>Haralur Road</option>
+        <option>Electronic City Phase II</option>
+        <option>Rajaji Nagar</option>
+        <option>Chandapura</option>
+        <option>Bellandur</option>
+        <option>KR Puram</option>
+        <option>Hoodi</option>
+        <option>Electronics City Phase 1</option>
+        <option>Yeshwanthpur</option>
+        <option>Begur Road</option>
+        <option>Sarjapur</option>
+        <option>Kasavanhalli</option>
+        <option>Harlur</option>
+        <option>Banashankari</option>
+        <option>Hormavu</option>
+        <option>Kengeri</option>
+        <option>Ramamurthy Nagar</option>
+        <option>Hosa Road</option>
+        <option>Koramangala</option>
+        <option>Old Madras Road</option>
+        <option>Varthur</option>
+        <option>Jakkur</option>
+        <option>JP Nagar</option>
+        <option>Kothanur</option>
+        <option>Kaggadasapura</option>
+        <option>Nagarbhavi</option>
+        <option>Akshaya Nagar</option>
+        <option>Thigalarapalya</option>
+        <option>TC Palaya</option>
+        <option>Rachenahalli</option>
+        <option>8th Phase JP Nagar</option>
+        <option>Malleshwaram</option>
+        <option>Budigere</option>
+        <option>HSR Layout</option>
+        <option>Hennur</option>
+        <option>Hulimavu</option>
+        <option>Jalahalli</option>
+        <option>Jigani</option>
+        <option>Bisuvanahalli</option>
+        <option>Panathur</option>
+      </select>
+
+      <label>Total Sqft:</label>
+      <input type="text" name="total_sqft" required>
+
+      <label>No. of Bathrooms:</label>
+      <input type="text" name="bath" required>
+
+      <label>No. of BHK:</label>
+      <input type="text" name="bhk" required>
+
+      <input type="submit" value="Predict Price">
+    </form>
+  </div>
+</body>
+</html>
